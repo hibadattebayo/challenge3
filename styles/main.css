@@ -42,7 +42,9 @@ body{
 
 #weather{
 	grid-area: weather;
-	background-image: linear-gradient(to right, #b993d6, #8ca6db);
+	background: #7474BF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .weathericon{
@@ -55,6 +57,9 @@ body{
 
 #humidity{
 	grid-area: humidity;
+	background: #7474BF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #memes{
@@ -116,10 +121,15 @@ h2{
 	display: inline;
 }
 
+.w_title{
+	color: white;
+}
+
 .weathericon{
 	width: 10%;
 	height: auto;
 }
+
 
 }
 

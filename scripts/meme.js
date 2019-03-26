@@ -16,7 +16,7 @@ function getAPIdata() {
 	.then(function(response) {
 		for (var i = 0; i < response.data.length; i++){
 			//console.log(response.data[i].images);
-			document.getElementById("memes").innerHTML += '<img class="gifs" src=" ' + response.data[i].images.fixed_width.url + '">' + '<br>';
+			document.getElementById("gifbox").innerHTML += '<img class="gifs" src=" ' + response.data[i].images.fixed_width.url + '">' + '<br>';
 		}
 	});
 }

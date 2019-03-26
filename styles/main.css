@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
+
+body{
+	background-color: #f9f9f9;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:"title" "weather" "humidity" "memes";
+	grid-gap: 3%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-item{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	/*justify-content: center;*/
+	
+	background-color: #ffffff;
+}
+
+.header{
+	grid-area: title;
+	color: #504063;
+	font-family: source sans pro;
+	font-weight: 900;
+	font-size: 45px;
+	
+	text-align: center;
+	margin: 0;
+	margin-top: 2%;
+}
+
+#weather{
+	grid-area: weather;
+	background-image: linear-gradient(to right, #b993d6, #8ca6db);
+}
+
+.weathericon{
+	filter: grayscale(100%);
+}
+
+.weathertitle{
+	color: white;
+}
+
+#humidity{
+	grid-area: humidity;
+}
+
+#memes{
+	grid-area: memes;
+}
+
+.gifs{
+	width: 80%;
+	height: auto;
+}
+
+.title{
+	color: #1f083a;
+	font-family: source sans pro;
+	font-weight: 600;
+	font-size: 30px;
+	margin: 0;
+	text-align: center;
+}
+
+.exp{
+	color: #1f083a;
+	font-family: source sans pro;
+	font-weight: 200;
+	font-size: 15px;
+	margin: 2%;
+	text-align: center;
+}
+
+h2{
+	color: #716084;
+	font-family: source sans pro;
+	font-weight: 300;
+	font-size: 35px;
+	margin: 0;
+}
+
+.title{
+	display: none;
+}
+
+.m_title{
+	display: inline;
+}
+
+@media only screen and (min-width:360px){
+	
+}
+
+@media only screen and (min-width:768px){
+.grid-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:"title title" "weather humidity" "memes memes";
+	grid-gap: 1%;
+}
+
+.title{
+	display: inline;
+}
+
+.weathericon{
+	width: 10%;
+	height: auto;
+}
+
+}
+
+@media only screen and (min-width:1366px){
+	
+}

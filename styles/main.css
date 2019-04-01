@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:900');
 
+/*Media query for small screens*/
 @media only screen and (min-width:0px){
 body{
 	background-color: #f9f9f9;
@@ -11,6 +12,7 @@ body{
 	/*overflow-x: hidden;*/
 }
 
+/*Creating the grid for phone*/
 .grid-container{
 	display: grid;
 	grid-template-columns: 1fr;
@@ -20,6 +22,7 @@ body{
 	margin-right: 1%;
 }
 
+/*All grid items*/
 .grid-item{
 	display: flex;
 	flex-flow: column;
@@ -29,6 +32,7 @@ body{
 	background-color: #ffffff;
 }
 
+/*The logo*/
 .header{
 	grid-area: title;
 	color: #504063;
@@ -40,6 +44,7 @@ body{
 	margin: 2%;
 }
 
+/*DIV style for weather*/
 #weather{
 	grid-area: weather;
 	background: #42275a;  /* fallback for old browsers */
@@ -47,28 +52,31 @@ body{
 	background: linear-gradient(to left, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/*I want the weather icon from the API  to be shown with a black and white filter*/
 .weathericon{
 	filter: grayscale(100%);
 }
 
+/*Title style for weather*/
 .weathertitle{
 	color: white;
 }
 
 #time{
 	grid-area: time;
-	
+	/*Font styles*/
 	color: white;
 	font-family: source sans pro;
 	font-weight: 300;
     font-size: 35px;
 	padding: 2%;
-	
+	/*DIV styles*/
 	background: #42275a;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #734b6d, #42275a);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #734b6d, #42275a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/*Date style*/
 #dateDisplay{
 	font-size: 20px;
 }
@@ -77,6 +85,7 @@ body{
 	grid-area: memes;
 }
 
+/*Creds to myself style*/
 .creds{
 	grid-area: credits;
 	text-align: center;
@@ -87,6 +96,7 @@ body{
 	margin-bottom: 2%;
 }
 
+
 .title{
 	color: #1f083a;
 	font-family: source sans pro;
@@ -96,6 +106,7 @@ body{
 	text-align: center;
 }
 
+/*TEXT style for meme paragraph*/
 .exp{
 	color: #1f083a;
 	font-family: source sans pro;
@@ -106,6 +117,7 @@ body{
 	text-align: center;
 }
 
+
 h2{
 	color: #716084;
 	font-family: source sans pro;
@@ -114,18 +126,30 @@ h2{
 	margin: 0;
 }
 
+/*Dont show the titles for time and temperature on phone*/
 .title{
 	display: none;
 }
-
+ 
+/*Show title for memes*/
 .m_title{
 	display: inline;
 }
 }
 
 @media only screen and (min-width:768px){
-	
+/*Change font sizes for tablet*/
+.creds{
+	font-size: 18px;
+}
 
+.exp{
+	font-size: 17px;
+}
+
+.m_title{
+	font-size: 35px;
+}
 }
 
 @media only screen and (min-width:1366px){

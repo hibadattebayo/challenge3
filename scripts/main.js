@@ -1,4 +1,4 @@
-//digital clock!!
+//digital clock!! (I took this from challenge 2)
 function showTime(){
     var date = new Date();
     var h = date.getHours();
